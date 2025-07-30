@@ -39,7 +39,7 @@
             MoveMunitionTimer = new System.Windows.Forms.Timer(components);
             MoveEnemiesTimer = new System.Windows.Forms.Timer(components);
             EnemiesMunitionTimer = new System.Windows.Forms.Timer(components);
-            ReplayBtn = new Button();
+            PlayBtn = new Button();
             ExitBtn = new Button();
             label = new Label();
             scoretxt = new Label();
@@ -103,16 +103,16 @@
             EnemiesMunitionTimer.Interval = 20;
             EnemiesMunitionTimer.Tick += EnemiesMunitionTimer_Tick;
             // 
-            // ReplayBtn
+            // PlayBtn
             // 
-            ReplayBtn.Location = new Point(198, 198);
-            ReplayBtn.Name = "ReplayBtn";
-            ReplayBtn.Size = new Size(180, 61);
-            ReplayBtn.TabIndex = 1;
-            ReplayBtn.Text = "Replay";
-            ReplayBtn.UseVisualStyleBackColor = true;
-            ReplayBtn.Visible = false;
-            ReplayBtn.Click += ReplayBtn_Click;
+            PlayBtn.Location = new Point(198, 198);
+            PlayBtn.Name = "PlayBtn";
+            PlayBtn.Size = new Size(180, 61);
+            PlayBtn.TabIndex = 1;
+            PlayBtn.Text = "Play";
+            PlayBtn.UseVisualStyleBackColor = true;
+            PlayBtn.Visible = false;
+            PlayBtn.Click += ReplayBtn_Click;
             // 
             // ExitBtn
             // 
@@ -193,7 +193,7 @@
             Controls.Add(scoretxt);
             Controls.Add(label);
             Controls.Add(ExitBtn);
-            Controls.Add(ReplayBtn);
+            Controls.Add(PlayBtn);
             Controls.Add(Player);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(600, 500);
@@ -218,7 +218,7 @@
         private System.Windows.Forms.Timer MoveMunitionTimer;
         private System.Windows.Forms.Timer MoveEnemiesTimer;
         private System.Windows.Forms.Timer EnemiesMunitionTimer;
-        private Button ReplayBtn;
+        private Button PlayBtn;
         private Button ExitBtn;
         private Label label;
         private Label scoretxt;

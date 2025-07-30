@@ -329,7 +329,7 @@ namespace SpaceShip
             label.Text = str;
             label.Location = new Point(120, 120);
             label.Visible = true;
-            ReplayBtn.Visible = true;
+            PlayBtn.Visible = true;
             ExitBtn.Visible = true;
 
             StopTimers();
